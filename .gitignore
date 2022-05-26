@@ -1,0 +1,84 @@
+# specific to project
+/output
+
+# Mac-specific
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+*.DS_Store
+
+# Other
+.metadata/
+
+# VSCode
+.vscode
+*.code-workspace
+
+# files generated from md files
+README.html
+
+# files generated from verification (keep only summary.txt)
+algo_*.txt
+
+# SPIN model
+pan*
+*.out
+*.tmp
+*.trail
+
+# Python
+__pycache__/
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
