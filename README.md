@@ -63,6 +63,18 @@ The exact context is not detailed here but can be found in the prolific literatu
 
 ## Verification
 
+### Verification script
+
+The python script `src/python/verify.py` performs an exhaustive verification for all models (schedulers) and most algorithms. The script is simply run from the terminal without arguments. Running the script will create a directory `output/verify` at the root of this project, with report files from the verification of each case, as follows:
+* `algo_<algorithm name>.txt` contains the output of the verification (number of states, memory, etc.).
+* `algo_<algorithm name>.txt.trail` contains the description of a counter-example as output by SPIN to be used by generic tools.
+* `algo_<algorithm name>.txt.counter.txt` contains a textual description of the counter-example that can be made more readable by executing the command
+    ~~~
+    egrep '(<<<|CONF|STEP)' algo_<algorithm name>.txt.counter.txt
+    ~~~
+All of the results (pass or fail) are summarized in the file `output/verify/summary.txt`
+
+
 ### Verification commands
 
 - commands to verify liveness
