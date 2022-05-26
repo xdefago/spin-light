@@ -26,7 +26,7 @@ def number_of_cores():
 PAN_CMD   = "./pan -m100000 -a -f -E -n gathering".split()
 CLANG_CMD = (
     f"clang -DMEMLIM=4096 -DXUSAFE -DNOREDUCE -DNCORE={number_of_cores()} -O2 -w -o pan pan.c".split()
-        if platform.machine != "arm64" else
+        if platform.machine() != "arm64" else
     f"clang -DMEMLIM=4096 -DXUSAFE -DNOREDUCE -O2 -w -o pan pan.c".split()
 ) # NB: SPIN does not support multi-core on arm64
 TRAIL = Path("MainGathering.pml.trail")
@@ -51,9 +51,9 @@ Algorithms = (
     "ALGO_NO_MOVE",
     "ALGO_TO_HALF",
     "ALGO_TO_OTHER",
-    "ALGO_VIG_2COLS",
-    "ALGO_VIG_3COLS",
-    "ALGO_OPTIMAL",
+#    "ALGO_VIG_2COLS",
+#    "ALGO_VIG_3COLS",
+#    "ALGO_OPTIMAL",
 ##	"ALGO_TIXEUIL_EXTRA",
 ##	"ALGO_REGULAR6",
 ##	"ALGO_REGULAR5",
@@ -98,6 +98,12 @@ def verify_case(algo, sched):
 
 
 if __name__ == "__main__":
+    #
+    # Ensure the existence of the destination directory
+    #
+    if not DESTDIR.exists():
+        DESTDIR.mkdir(parents=True)
+    
     SAVE_CWD = Path.cwd()
     with tempfile.TemporaryDirectory() as tmpdir:
         os.chdir(tmpdir)
