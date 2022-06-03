@@ -112,3 +112,50 @@ This explains the code in `src/promela`
 * `Robots.pml` definition of the robots, the LCM cycle and its operations, and the movement resolution.
 * `Schedulers.pml` definitions of each scheduler: SSYNC, ASYNC, ...
 * `Types.pml` definitions of the main types (colors, observations, etc..)
+
+### References
+
+Research papers describing and making use of this codebase include:
+
+    @inproceedings{DBLP:conf/srds/DefagoHTW20,
+      author    = {Xavier D{\'{e}}fago and
+                   Adam Heriban and
+                   S{\'{e}}bastien Tixeuil and
+                   Koichi Wada},
+      title     = {Using Model Checking to Formally Verify Rendezvous Algorithms for
+                   Robots with Lights in Euclidean Space},
+      booktitle = {International Symposium on Reliable Distributed Systems, {SRDS} 2020,
+                   Shanghai, China, September 21-24, 2020},
+      pages     = {113--122},
+      publisher = {{IEEE}},
+      year      = {2020},
+      url       = {https://doi.org/10.1109/SRDS51746.2020.00019},
+      doi       = {10.1109/SRDS51746.2020.00019},
+      timestamp = {Mon, 03 Jan 2022 22:16:15 +0100},
+      biburl    = {https://dblp.org/rec/conf/srds/DefagoHTW20.bib},
+      bibsource = {dblp computer science bibliography, https://dblp.org}
+    }
+    
+and
+
+    @inproceedings{DBLP:conf/wdag/DefagoHTW19,
+      author    = {Xavier D{\'{e}}fago and
+                   Adam Heriban and
+                   S{\'{e}}bastien Tixeuil and
+                   Koichi Wada},
+      editor    = {Jukka Suomela},
+      title     = {Brief Announcement: Model Checking Rendezvous Algorithms for Robots
+                   with Lights in Euclidean Space},
+      booktitle = {33rd International Symposium on Distributed Computing, {DISC} 2019,
+                   October 14-18, 2019, Budapest, Hungary},
+      series    = {LIPIcs},
+      volume    = {146},
+      pages     = {41:1--41:3},
+      publisher = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year      = {2019},
+      url       = {https://doi.org/10.4230/LIPIcs.DISC.2019.41},
+      doi       = {10.4230/LIPIcs.DISC.2019.41},
+      timestamp = {Sat, 12 Oct 2019 12:51:45 +0200},
+      biburl    = {https://dblp.org/rec/conf/wdag/DefagoHTW19.bib},
+      bibsource = {dblp computer science bibliography, https://dblp.org}
+    }
