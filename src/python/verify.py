@@ -37,14 +37,14 @@ Schedulers = (
     "FSYNC",
     "SSYNC",
     "ASYNC_LC_ATOMIC",
-    "ASYNC_LC_STRICT",
-    "ASYNC_CM_ATOMIC",
+#    "ASYNC_LC_STRICT",
+#    "ASYNC_CM_ATOMIC",
     "ASYNC_MOVE_ATOMIC",
-    "ASYNC_MOVE_REGULAR",
-    "ASYNC_MOVE_SAFE",
     "ASYNC",
     "ASYNC_REGULAR",
     "ASYNC_SAFE",
+#    "ASYNC_MOVE_REGULAR",
+#    "ASYNC_MOVE_SAFE",
 )
 
 Algorithms = (
@@ -54,15 +54,15 @@ Algorithms = (
     "ALGO_VIG_2COLS",
     "ALGO_VIG_3COLS",
     "ALGO_OPTIMAL",
+    "ALGO_REGULAR4",
 #	"ALGO_TIXEUIL_EXTRA",
 #	"ALGO_REGULAR6",
 #	"ALGO_REGULAR5",
-    "ALGO_REGULAR4",
     "ALGO_FLO_ALGO3EXT",
 ##	"ALGO_FLO_ALGO3EXT_PRIME",
-    "ALGO_3EXT_NONQSS",
-    "ALGO_WADA_4EXT",
     "ALGO_WADA_5EXT",
+    "ALGO_WADA_4EXT",
+    "ALGO_3EXT_NONQSS",
 )
 
 def searchComplete(filepath):
