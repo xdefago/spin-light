@@ -117,6 +117,25 @@ This explains the code in `src/promela`
 
 Research papers describing and making use of this codebase include:
 
+    @article{DBLP:journals/ras/DefagoHTW23,
+      author    = {Xavier D{\'{e}}fago and
+                   Adam Heriban and
+                   S{\'{e}}bastien Tixeuil and
+                   Koichi Wada},
+      title     = {Using model checking to formally verify rendezvous algorithms for robots
+                   with lights in Euclidean space},
+      journal   = {Robotics Auton. Syst.},
+      booktitle = {International Symposium on Reliable Distributed Systems, {SRDS} 2020,
+                   Shanghai, China, September 21-24, 2020},
+      volume    = {163},
+      pages     = {104378},
+      year      = {2023},
+      url       = {https://doi.org/10.1016/j.robot.2023.104378},
+      doi       = {10.1016/j.robot.2023.104378},
+    }
+
+as the main reference, and earlier preliminary versions
+
     @inproceedings{DBLP:conf/srds/DefagoHTW20,
       author    = {Xavier D{\'{e}}fago and
                    Adam Heriban and
