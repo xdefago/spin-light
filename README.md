@@ -4,6 +4,9 @@ This project contains a verification model written in PROMELA (SPIN model checke
 
 The exact context is not detailed here but can be found in the prolific literature on the topic of so-called "luminous robots".
 
+## Acknowledgments
+
+This work was supported in part by JSPS KAKENHI Grant Numbers 20K11685 and 21K11748.
 
 ## Modeling
 
